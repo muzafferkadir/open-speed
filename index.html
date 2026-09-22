@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#0d1715">
+ <link rel="icon" type="image/svg+xml" href="/open-speed-logo.svg?v=9">
+ <link rel="stylesheet" href="/src/style.css">
+ <title>Open Speed</title>
+</head>
+<body>
+ <div id="app">
+  <canvas id="scene" aria-label="Race track"></canvas>
+  <div id="speed-blur" aria-hidden="true"></div>
+
+  <div id="loading-screen">
+   <div class="loading-logo"><img src="/open-speed-logo.svg?v=9" width="320" height="160" alt="Open Speed"></div>
+   <span>LOADING</span>
+   <i></i>
+  </div>
+
+  <section id="garage" aria-label="Main menu">
+   <div class="garage-topbar">
+    <img class="garage-logo" src="/open-speed-logo.svg?v=9" width="280" height="140" alt="Open Speed">
+    <nav class="garage-nav" aria-label="Main menu tabs">
+     <button type="button" data-garage-tab="settings"><svg class="tab-shape" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M15 2H97L85 38H15A13 13 0 0 1 2 25V15A13 13 0 0 1 15 2Z"></path></svg><span>Settings</span></button>
+     <span class="nav-divider" aria-hidden="true"><svg viewBox="0 0 24 40" focusable="false"><path d="M18 3 6 37"></path></svg></span>
+     <button type="button" data-garage-tab="my-ride" class="is-active"><span>My Ride</span></button>
+     <span class="nav-divider" aria-hidden="true"><svg viewBox="0 0 24 40" focusable="false"><path d="M18 3 6 37"></path></svg></span>
+     <button type="button" data-garage-tab="map"><span>Map</span></button>
+     <span class="nav-divider" aria-hidden="true"><svg viewBox="0 0 24 40" focusable="false"><path d="M18 3 6 37"></path></svg></span>
+     <button type="button" data-garage-tab="start"><svg class="tab-shape" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M15 2H85A13 13 0 0 1 98 15V25A13 13 0 0 1 85 38H3Z"></path></svg><span>Start</span></button>
+    </nav>
+   </div>
+
+   <div class="garage-views">
+    <section class="garage-view is-active" data-garage-view="my-ride" aria-labelledby="ride-title">
+     <div class="garage-selector" id="vehicle-selector" role="group" aria-label="Vehicle selection">
+      <button type="button" class="selector-arrow" data-dir="-1" aria-label="Previous car">‹</button>
+      <div class="selector-label"><small>My ride</small><strong>Fiora Tempo</strong><span class="selector-dots"></span></div>
+      <button type="button" class="selector-arrow" data-dir="1" aria-label="Next car">›</button>
+     </div>
+     <article class="garage-info ride-card">
+      <p class="panel-kicker">YOUR GARAGE</p>
+      <h1 id="garage-name">Fiora Tempo</h1>
+      <p class="ride-subtitle" id="garage-subtitle"></p>
+      <div class="panel-rule"></div>
+      <p id="garage-description"></p>
+      <div id="garage-stats"></div>
+     </article>
+
+     <div class="garage-bottom customization-bar">
+      <div class="customization-title"><span class="customization-mark">✦</span><strong>Customization</strong><small>Paint color</small></div>
+      <div class="paint-swatches" aria-label="Available paint colors">
+       <span class="paint-swatch as-painted selected" title="As painted"></span>
+       <span class="paint-swatch" style="--swatch:#08a6d8"></span>
+       <span class="paint-swatch" style="--swatch:#e8ece6"></span>
+       <span class="paint-swatch" style="--swatch:#c52625"></span>
+       <span class="paint-swatch" style="--swatch:#173d89"></span>
+       <span class="paint-swatch" style="--swatch:#e7b827"></span>
+       <span class="paint-swatch" style="--swatch:#20774b"></span>
+       <span class="paint-swatch" style="--swatch:#101817"></span>
+      </div>
+      <div id="garage-status" role="status"></div>
+     </div>
+    </section>
+
+    <section class="garage-view" data-garage-view="settings" aria-labelledby="settings-title">
+     <article class="garage-info settings-card">
+      <p class="panel-kicker">SYSTEM CONFIGURATION</p>
+      <h1 id="settings-title">Settings</h1>
+      <p class="panel-lede">Customize your experience</p>
+      <div class="panel-rule"></div>
+      <label class="setting-row"><span>Music volume <output>70%</output></span><input type="range" value="70" min="0" max="100" data-setting="music" data-setting-output></label>
+      <label class="setting-row"><span>SFX volume <output>80%</output></span><input type="range" value="80" min="0" max="100" data-setting="sfx" data-setting-output></label>
+      <label class="select-row"><span>Language</span><select data-setting="language"><option>English</option></select></label>
+      <label class="select-row"><span>Units</span><select data-setting="units"><option>Metric (km/h)</option><option>Imperial (mph)</option></select></label>
+      <div class="panel-rule"></div>
+      <label class="select-row"><span>Render style</span><select data-setting="style"><option value="cartoon">Cartoon</option><option value="off">Realistic</option><option value="matcap">Matcap</option><option value="clay">Clay</option><option value="wire">Wireframe</option><option value="normal">Normals</option></select></label>
+      <label class="select-row"><span>Film grade</span><select data-setting="look"><option value="remaster">Remaster</option><option value="hyper">Hyper casual</option><option value="film">Aged film</option><option value="crt">CRT</option><option value="comic">Comic</option><option value="noir">Noir</option></select></label>
+      <label class="select-row"><span>Tone mapping</span><select data-setting="tone"><option value="aces">ACES</option><option value="agx">AgX</option><option value="neutral">Neutral</option></select></label>
+     </article>
+    </section>
+
+    <section class="garage-view map-view" data-garage-view="map" aria-labelledby="map-title">
+     <div class="garage-selector" id="map-selector" role="group" aria-label="Track selection">
+      <button type="button" class="selector-arrow" data-dir="-1" aria-label="Previous track">‹</button>
+      <div class="selector-label"><small>Track</small><strong>Coastal Grand Tour</strong><span class="selector-dots"></span></div>
+      <button type="button" class="selector-arrow" data-dir="1" aria-label="Next track">›</button>
+     </div>
+     <article class="garage-info map-card">
+      <p class="panel-kicker" id="map-kicker"></p>
+      <h1 id="map-title"></h1>
+      <p class="panel-lede" id="map-lede"></p>
+      <div class="panel-rule"></div>
+      <div class="map-stat"><span>MODE</span><strong id="map-mode"></strong></div>
+      <div class="map-stat"><span>TERRAIN</span><strong id="map-terrain"></strong></div>
+      <div class="map-stat"><span>LAYOUT</span><strong id="map-layout"></strong></div>
+     </article>
+     <div class="map-stage">
+      <div class="map-surface"><canvas id="menu-map" width="760" height="560" aria-label="Midtown island map"></canvas></div>
+      <div class="map-legend" aria-label="Map legend">
+       <div><i class="legend-line"></i><span>Roads</span></div>
+       <div><i class="legend-icon start-icon">◉</i><span>Start point</span></div>
+      </div>
+     </div>
+    </section>
+
+    <section class="garage-view" data-garage-view="start" aria-labelledby="start-title">
+     <article class="garage-info start-card">
+      <p class="panel-kicker" id="start-kicker"></p>
+      <h1 id="start-title"></h1>
+      <p class="panel-lede" id="start-lede"></p>
+      <div class="event-photo" aria-hidden="true"><span id="start-photo"></span></div>
+      <div class="start-facts" id="start-facts">
+       <div><i>⌖</i><span></span></div>
+       <div><i>∕</i><span></span></div>
+       <div><i>☾</i><span></span></div>
+       <div><i>▰</i><span></span></div>
+      </div>
+     </article>
+     <div class="garage-bottom start-action">
+      <button id="drive" class="primary" disabled><span>❯</span><em id="drive-label">Start</em><strong>❯</strong></button>
+     </div>
+    </section>
+   </div>
+  </section>
+
+  <header class="race-header">
+   <img class="brand-logo" src="/open-speed-logo.svg?v=9" width="180" height="90" alt="Open Speed">
+   <button id="menu-toggle" aria-controls="menu" aria-expanded="false">Menu <kbd>Esc</kbd></button>
+  </header>
+  <div id="message" role="status">Loading…</div>
+  <section id="results" hidden role="dialog" aria-labelledby="results-title">
+   <div class="results-panel">
+    <p class="panel-kicker">Race complete</p>
+    <h1 id="results-title">Finished</h1>
+    <ol id="results-list"></ol>
+    <div class="actions"><button id="results-again" class="primary">Race again · R</button><button id="results-menu">Exit to menu</button></div>
+   </div>
+  </section>
+  <div id="countdown" hidden aria-live="assertive"><div class="lights"><i class="red"></i><i class="yellow"></i><i class="green"></i></div><strong id="countdown-text"></strong></div>
+  <aside><canvas id="map" width="220" height="220" aria-label="Track map"></canvas></aside>
+  <section class="dashboard" aria-label="Car dashboard">
+   <div class="speed"><strong id="speed">000</strong><span>km/h</span></div>
+   <div class="rpm"><div class="labels"><span id="rpm">850 RPM</span><span id="time">00:00.0</span></div><div class="rail"><i id="revbar"></i></div><span id="grip"></span></div>
+   <div class="gear"><span>GEAR</span><strong id="gear">1</strong></div>
+   <div class="race"><strong id="race"></strong></div>
+  </section>
+
+  <section id="menu" hidden role="dialog" aria-modal="true" aria-labelledby="menu-title">
+   <div class="pause-map-stage"><canvas id="pause-map" width="1024" height="1024" aria-label="Full island map and current position"></canvas></div>
+   <div class="menu-panel"><h1 id="menu-title">Paused</h1><button id="pause" class="primary">Resume</button><div class="actions"><button id="camera">Camera · V</button><button id="sound">Sound off</button><button id="reset">Restart · R</button></div><details><summary>Controls</summary><dl><dt>W / ↑</dt><dd>Throttle</dd><dt>S / ↓</dt><dd>Brake</dd><dt>Shift</dt><dd>Reverse (hold, at a standstill)</dd><dt>A D / ← →</dt><dd>Steering</dd><dt>Space</dt><dd>Handbrake</dd><dt>Z / C</dt><dd>Look left / right (hold)</dd><dt>X</dt><dd>Look back (hold)</dd><dt>V</dt><dd>Change camera</dd><dt>R</dt><dd>Restart</dd><dt>Esc</dt><dd>Menu / resume</dd></dl></details></div>
+  </section>
+  <div class="touch"><button data-control="left" aria-label="Turn left">◀</button><button data-control="right" aria-label="Turn right">▶</button><button data-control="brake">Brake</button><button data-control="throttle">Throttle</button></div>
+ </div>
+ <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

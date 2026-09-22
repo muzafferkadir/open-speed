@@ -1,0 +1,80 @@
+[
+  {
+    "id": "proving-grounds",
+    "name": "Proving Grounds",
+    "description": "Classic banked oval: four turns, flat out all the way round.",
+    "file": "proving-grounds.json",
+    "kind": "oval",
+    "kicker": "PROVING GROUNDS",
+    "mode": "RACE \u00b7 3 LAPS",
+    "terrain": "HIGH DESERT \u00b7 MESAS",
+    "layout": "4 BANKED TURNS \u00b7 26\u00b0",
+    "start": {
+      "kicker": "OVAL RACE",
+      "title": "Race",
+      "lede": "Five rivals, three laps, four banked turns. Flat out all the way round.",
+      "photo": [
+        "PROVING GROUNDS",
+        "OVAL RACE"
+      ],
+      "facts": [
+        [
+          "PROVING GROUNDS",
+          "BANKED OVAL"
+        ],
+        [
+          "3 LAPS",
+          "5 RIVALS"
+        ],
+        [
+          "DAYLIGHT",
+          "HIGH DESERT"
+        ],
+        [
+          "26\u00b0 BANKING",
+          "FLAT OUT"
+        ]
+      ],
+      "button": "Start race"
+    }
+  },
+  {
+    "id": "last-resort",
+    "name": "Last Resort",
+    "description": "Coastal headland circuit: real elevation, banking and tight road limits.",
+    "file": "last-resort.json",
+    "kind": "road",
+    "kicker": "LAST RESORT",
+    "mode": "RACE \u00b7 3 LAPS",
+    "terrain": "JUNGLE \u00b7 HEADLAND",
+    "layout": "7.4 KM \u00b7 186 M CLIMB",
+    "start": {
+      "kicker": "LAST RESORT",
+      "title": "Race",
+      "lede": "Five rivals, three laps of the coastal headland route.",
+      "photo": [
+        "LAST RESORT",
+        "HEADLAND ROUTE"
+      ],
+      "facts": [
+        [
+          "LAST RESORT",
+          "COASTAL ROUTE"
+        ],
+        [
+          "7.4 KM",
+          "3 LAPS"
+        ],
+        [
+          "186 M",
+          "ELEVATION"
+        ],
+        [
+          "SEA LEVEL",
+          "TO SUMMIT"
+        ]
+      ],
+      "button": "Start race"
+    }
+  }
+]

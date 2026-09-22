@@ -1,0 +1,625 @@
+[
+  {
+    "id": "marlin-f1",
+    "name": "Marlin F1",
+    "description": "The flagship. 386 km/h, turns on a coin at low speed.",
+    "model": {
+      "url": "/vehicles/marlin-f1.glb",
+      "lod": "/vehicles/marlin-f1-lod.glb",
+      "source": "marlin-f1-v3",
+      "sourceRotationZ": 3.141592653589793,
+      "wheels": {
+        "axle": "x",
+        "front": {
+          "along": -0.2746,
+          "across": 0.1907,
+          "height": 0.075,
+          "radius": 0.0786,
+          "width": 0.0764
+        },
+        "rear": {
+          "along": 0.3387,
+          "across": 0.181,
+          "height": 0.0724,
+          "radius": 0.076,
+          "width": 0.0989
+        },
+        "style": "alloy-5"
+      }
+    },
+    "dimensions": {
+      "wheelbase": 2.72,
+      "trackWidth": 1.648,
+      "wheelRadius": 0.343
+    },
+    "physics": {
+      "arcade": "marl",
+      "mass": 1134,
+      "topSpeed": 386,
+      "torque": 600,
+      "frontGrip": 2.6,
+      "rearGrip": 2.5,
+      "drag": 0.3,
+      "brake": 14
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        12,
+        48
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.695,
+            0.803,
+            2.104
+          ],
+          "size": [
+            0.105,
+            0.105
+          ],
+          "round": true
+        },
+        "reverse": {
+          "center": [
+            0.829,
+            0.803,
+            2.095
+          ],
+          "size": [
+            0.09,
+            0.09
+          ],
+          "round": true
+        }
+      }
+    },
+    "subtitle": "F1 '94"
+  },
+  {
+    "id": "crimson-viper",
+    "name": "Rossa 50",
+    "description": "A homologation special with a roof you can lift off. Revs to the moon, forgives nothing.",
+    "model": {
+      "url": "/vehicles/crimson-viper.glb",
+      "source": "rossa-50",
+      "sourceRotationZ": 1.5707963267948966,
+      "wheels": {
+        "axle": "y",
+        "front": {
+          "along": 0.2536,
+          "across": 0.1751,
+          "height": -0.0657,
+          "radius": 0.0737,
+          "width": 0.065
+        },
+        "rear": {
+          "along": -0.3098,
+          "across": 0.1777,
+          "height": -0.0626,
+          "radius": 0.0772,
+          "width": 0.0916
+        },
+        "style": "alloy-5"
+      },
+      "widthScale": 1.0046
+    },
+    "dimensions": {
+      "wheelbase": 2.58,
+      "trackWidth": 1.623,
+      "wheelRadius": 0.339
+    },
+    "physics": {
+      "arcade": "cors",
+      "mass": 1230,
+      "topSpeed": 325,
+      "torque": 470,
+      "frontGrip": 2.6,
+      "rearGrip": 2.5,
+      "drag": 0.33,
+      "brake": 14
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        350,
+        20
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.84,
+            0.764,
+            2.099
+          ],
+          "size": [
+            0.11,
+            0.11
+          ],
+          "round": true
+        },
+        "reverse": {
+          "center": [
+            0.69,
+            0.764,
+            2.097
+          ],
+          "size": [
+            0.085,
+            0.085
+          ],
+          "round": true
+        }
+      }
+    },
+    "subtitle": "Berlinetta"
+  },
+  {
+    "id": "scuderia-355",
+    "name": "Scuderia 355",
+    "description": "Mid-engined and light on its feet. Turns in where the heavy cars push wide.",
+    "model": {
+      "url": "/vehicles/scuderia-355.glb",
+      "source": "scuderia-355-v2",
+      "sourceRotationZ": 3.141592653589793,
+      "wheels": {
+        "axle": "x",
+        "front": {
+          "along": -0.2744,
+          "across": 0.1797,
+          "height": 0.0697,
+          "radius": 0.0732,
+          "width": 0.0634
+        },
+        "rear": {
+          "along": 0.3096,
+          "across": 0.1797,
+          "height": 0.0697,
+          "radius": 0.0732,
+          "width": 0.0634
+        },
+        "style": "alloy-5"
+      }
+    },
+    "dimensions": {
+      "wheelbase": 2.45,
+      "trackWidth": 1.508,
+      "wheelRadius": 0.308
+    },
+    "physics": {
+      "arcade": "c355",
+      "mass": 1353,
+      "topSpeed": 295,
+      "torque": 420,
+      "frontGrip": 2.5,
+      "rearGrip": 2.4,
+      "drag": 0.34,
+      "brake": 13
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        350,
+        20
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.63,
+            0.736,
+            1.88
+          ],
+          "size": [
+            0.082,
+            0.082
+          ],
+          "round": true
+        },
+        "reverse": {
+          "center": [
+            0.5,
+            0.736,
+            1.905
+          ],
+          "size": [
+            0.066,
+            0.066
+          ],
+          "round": true
+        }
+      }
+    },
+    "subtitle": "Berlinetta"
+  },
+  {
+    "id": "elara-gt1",
+    "name": "Elara GT1",
+    "description": "A homologation racer with a road plate. Stiff, light and merciless over kerbs.",
+    "model": {
+      "url": "/vehicles/elara-gt1.glb",
+      "source": "elara-gt1-red",
+      "sourceRotationZ": 1.5707963267948966,
+      "wheels": {
+        "axle": "y",
+        "front": {
+          "along": 0.2838,
+          "across": 0.2098,
+          "height": -0.0639,
+          "radius": 0.083,
+          "width": 0.095
+        },
+        "rear": {
+          "along": -0.3125,
+          "across": 0.1807,
+          "height": -0.0658,
+          "radius": 0.0861,
+          "width": 0.0736
+        },
+        "style": "alloy-5"
+      }
+    },
+    "dimensions": {
+      "wheelbase": 2.3,
+      "trackWidth": 1.506,
+      "wheelRadius": 0.311
+    },
+    "physics": {
+      "arcade": "lumn",
+      "mass": 1050,
+      "topSpeed": 300,
+      "torque": 400,
+      "frontGrip": 2.7,
+      "rearGrip": 2.6,
+      "drag": 0.32,
+      "brake": 14
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        350,
+        20
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.59,
+            0.684,
+            1.691
+          ],
+          "size": [
+            0.1,
+            0.1
+          ],
+          "round": true
+        },
+        "reverse": {
+          "center": [
+            0.46,
+            0.684,
+            1.775
+          ],
+          "size": [
+            0.078,
+            0.078
+          ],
+          "round": true
+        }
+      }
+    },
+    "subtitle": "GT1"
+  },
+  {
+    "id": "comet-gt90",
+    "name": "Comet GT90",
+    "description": "A show car that got built. Long, wide and quickest of the three once it is straight.",
+    "model": {
+      "url": "/vehicles/comet-gt90.glb",
+      "source": "comet-gt90-v2",
+      "sourceRotationZ": 3.141592653589793,
+      "wheels": {
+        "axle": "x",
+        "front": {
+          "along": -0.2938,
+          "across": 0.2321,
+          "height": 0.078,
+          "radius": 0.0819,
+          "width": 0.0692
+        },
+        "rear": {
+          "along": 0.321,
+          "across": 0.2473,
+          "height": 0.0818,
+          "radius": 0.0848,
+          "width": 0.0711
+        },
+        "style": "alloy-5"
+      },
+      "widthScale": 0.83
+    },
+    "dimensions": {
+      "wheelbase": 2.64,
+      "trackWidth": 1.709,
+      "wheelRadius": 0.35
+    },
+    "physics": {
+      "arcade": "falc",
+      "mass": 1454,
+      "topSpeed": 320,
+      "torque": 600,
+      "frontGrip": 2.3,
+      "rearGrip": 2.25,
+      "drag": 0.36,
+      "brake": 12
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "lamps": {
+        "brake": {
+          "center": [
+            0.79,
+            0.75,
+            2.054
+          ],
+          "size": [
+            0.095,
+            0.07
+          ]
+        },
+        "reverse": {
+          "center": [
+            0.68,
+            0.75,
+            2.073
+          ],
+          "size": [
+            0.06,
+            0.05
+          ]
+        }
+      },
+      "palePaint": true
+    },
+    "subtitle": "Concept"
+  },
+  {
+    "id": "indigo-roadster",
+    "name": "Indigo Roadster",
+    "description": "An open-wheel show car with plates. Nothing over the driver, nothing to hide behind.",
+    "model": {
+      "url": "/vehicles/indigo-roadster.glb",
+      "source": "indigo-roadster",
+      "sourceRotationZ": 1.5707963267948966,
+      "wheels": {
+        "axle": "y",
+        "front": {
+          "along": 0.2621,
+          "across": 0.187,
+          "height": -0.0416,
+          "radius": 0.082,
+          "width": 0.08
+        },
+        "rear": {
+          "along": -0.3598,
+          "across": 0.187,
+          "height": -0.0416,
+          "radius": 0.082,
+          "width": 0.08
+        },
+        "style": "slick-race"
+      }
+    },
+    "dimensions": {
+      "wheelbase": 2.87,
+      "trackWidth": 1.726,
+      "wheelRadius": 0.352
+    },
+    "physics": {
+      "arcade": "indg",
+      "mass": 900,
+      "topSpeed": 310,
+      "torque": 430,
+      "frontGrip": 2.8,
+      "rearGrip": 2.7,
+      "drag": 0.3,
+      "brake": 14
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        350,
+        20
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.4,
+            0.4,
+            2.158
+          ],
+          "size": [
+            0.1,
+            0.06
+          ]
+        },
+        "reverse": {
+          "center": [
+            0.25,
+            0.4,
+            2.182
+          ],
+          "size": [
+            0.06,
+            0.05
+          ]
+        }
+      }
+    },
+    "subtitle": "Roadster"
+  },
+  {
+    "id": "mmv-e90",
+    "name": "MMV E90",
+    "subtitle": "Saloon '07",
+    "description": "A saloon with the back seats still in it. Steady where the others are nervous, and quicker than it looks.",
+    "model": {
+      "url": "/vehicles/mmv-e90.glb",
+      "source": "mmv-e90",
+      "sourceRotationZ": 3.141592653589793,
+      "widthScale": 0.87,
+      "wheels": {
+        "axle": "x",
+        "front": {
+          "along": -0.3243,
+          "across": 0.1773,
+          "height": 0.069,
+          "radius": 0.0704,
+          "width": 0.0633
+        },
+        "rear": {
+          "along": 0.2607,
+          "across": 0.1773,
+          "height": 0.069,
+          "radius": 0.0704,
+          "width": 0.0633
+        },
+        "style": "alloy-5"
+      }
+    },
+    "dimensions": {
+      "wheelbase": 2.76,
+      "trackWidth": 1.455,
+      "wheelRadius": 0.332
+    },
+    "physics": {
+      "arcade": "espi",
+      "mass": 1500,
+      "topSpeed": 250,
+      "torque": 300,
+      "frontGrip": 2.3,
+      "rearGrip": 2.2,
+      "drag": 0.36,
+      "brake": 12
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "palePaint": true,
+      "lamps": {
+        "brake": {
+          "center": [
+            0.655,
+            1.0,
+            2.1
+          ],
+          "size": [
+            0.1,
+            0.09
+          ]
+        },
+        "reverse": {
+          "center": [
+            0.53,
+            1.0,
+            2.14
+          ],
+          "size": [
+            0.06,
+            0.06
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "fiora-tempo",
+    "name": "Fiora Tempo",
+    "description": "A balanced starter. Calmer acceleration.",
+    "model": {
+      "url": "/vehicles/fiora-tempo.glb",
+      "source": "fiora-tempo-v2",
+      "sourceRotationZ": 3.141592653589793,
+      "wheels": {
+        "axle": "x",
+        "front": {
+          "along": -0.2861,
+          "across": 0.1687,
+          "height": 0.0677,
+          "radius": 0.0711,
+          "width": 0.0563
+        },
+        "rear": {
+          "along": 0.2738,
+          "across": 0.1686,
+          "height": 0.0673,
+          "radius": 0.0707,
+          "width": 0.0563
+        },
+        "style": "steel-cap"
+      },
+      "widthScale": 0.94
+    },
+    "dimensions": {
+      "wheelbase": 2.55,
+      "trackWidth": 1.444,
+      "wheelRadius": 0.323
+    },
+    "physics": {
+      "arcade": "fior",
+      "mass": 1250,
+      "topSpeed": 180,
+      "torque": 220,
+      "frontGrip": 2.15,
+      "rearGrip": 1.95,
+      "drag": 0.42,
+      "brake": 11
+    },
+    "visual": {
+      "paint": "",
+      "tint": "",
+      "strip": "",
+      "paintHue": [
+        350,
+        20
+      ],
+      "lamps": {
+        "brake": {
+          "center": [
+            0.7,
+            0.95,
+            2.09
+          ],
+          "size": [
+            0.085,
+            0.1
+          ]
+        },
+        "reverse": {
+          "center": [
+            0.585,
+            0.95,
+            2.1
+          ],
+          "size": [
+            0.06,
+            0.08
+          ]
+        }
+      }
+    },
+    "subtitle": "TEMPO '95"
+  }
+]

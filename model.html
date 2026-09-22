@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Open Speed · Model Viewer</title>
+ <style>
+  html, body { margin: 0; height: 100%; background: #14171a; color: #dfe6ea; font: 12px/1.4 ui-monospace, Menlo, monospace; }
+  body { display: grid; grid-template-rows: 1fr auto; height: 100vh; }
+  #stage { position: relative; min-height: 0; }
+  #stage canvas { display: block; width: 100%; height: 100%; }
+  .label { position: absolute; padding: 4px 8px; background: rgba(0,0,0,.55); border-radius: 4px; pointer-events: none; white-space: nowrap; }
+  .label.tl { left: 8px; top: 8px; } .label.tr { left: calc(50% + 8px); top: 8px; }
+  .label.bl { left: 8px; top: calc(50% + 8px); } .label.br { left: calc(50% + 8px); top: calc(50% + 8px); }
+  .divider { position: absolute; background: #2c333a; pointer-events: none; }
+  .divider.v { left: calc(50% - 1px); top: 0; width: 2px; height: 100%; }
+  .divider.h { top: calc(50% - 1px); left: 0; height: 2px; width: 100%; }
+  #info { margin: 0; padding: 8px 12px; border-top: 1px solid #2c333a; background: #0f1214; max-height: 40vh; overflow: auto; white-space: pre-wrap; }
+ </style>
+</head>
+<body>
+ <div id="stage">
+  <canvas id="scene"></canvas>
+  <i class="divider v"></i><i class="divider h"></i>
+  <span class="label tl" id="label-0"></span>
+  <span class="label tr" id="label-1"></span>
+  <span class="label bl" id="label-2"></span>
+  <span class="label br" id="label-3"></span>
+ </div>
+ <pre id="info">loading…</pre>
+ <script type="module" src="/src/model.ts"></script>
+</body>
+</html>

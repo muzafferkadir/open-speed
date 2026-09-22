@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 240" role="img" aria-label="Open Speed">
+ <defs>
+  <linearGradient id="metal" x1=".15" y1="0" x2=".8" y2="1">
+   <stop stop-color="#f5faf7"/><stop offset=".18" stop-color="#788985"/><stop offset=".34" stop-color="#dce3df"/><stop offset=".48" stop-color="#f6faf7"/><stop offset=".53" stop-color="#76847f"/><stop offset=".76" stop-color="#c1ccc6"/><stop offset="1" stop-color="#43534f"/>
+  </linearGradient>
+  <linearGradient id="type" x1="0" y1="0" x2=".15" y2="1">
+   <stop stop-color="#f8fcf9"/><stop offset=".4" stop-color="#cbd5cf"/><stop offset=".49" stop-color="#8c9794"/><stop offset=".51" stop-color="#e8eee9"/><stop offset="1" stop-color="#a5afac"/>
+  </linearGradient>
+  <g id="frame" fill-rule="evenodd">
+   <path d="M54 121C54 29 399 9 425 111C444 205 102 235 57 147L67 147C115 216 427 189 415 112C391 28 76 45 65 121Z"/>
+  </g>
+  <path id="rails" d="M28 83H468L463 91H25ZM15 153H454L449 162H11Z"/>
+  <g id="mark" transform="translate(42.25 96) skewX(-20) scale(1.13 1)">
+   <path transform="translate(0)" fill-rule="evenodd" d="M6 0H30L35 5V45L30 50H6L0 45V5ZM13 10V40H22V10Z"/>
+   <path transform="translate(39)" fill-rule="evenodd" d="M0 0H29L35 6V26L29 32H13V50H0ZM13 10V22H22V10Z"/>
+   <path transform="translate(78)" fill-rule="evenodd" d="M0 0H34V10H13V19H30V29H13V40H34V50H0Z"/>
+   <path transform="translate(117)" fill-rule="evenodd" d="M0 50V0H12L24 25V0H36V50H24L12 25V50Z"/>
+   <path transform="translate(166)" fill-rule="evenodd" d="M6 0H34V10H13V19H28L35 26V44L29 50H0V40H22V30H7L0 23V6Z"/>
+   <path transform="translate(205)" fill-rule="evenodd" d="M0 0H29L35 6V26L29 32H13V50H0ZM13 10V22H22V10Z"/>
+   <path transform="translate(244)" fill-rule="evenodd" d="M0 0H34V10H13V19H30V29H13V40H34V50H0Z"/>
+   <path transform="translate(283)" fill-rule="evenodd" d="M0 0H34V10H13V19H30V29H13V40H34V50H0Z"/>
+   <path transform="translate(322)" fill-rule="evenodd" d="M0 0H27L36 9V41L27 50H0ZM13 10V40H23V10Z"/>
+  </g>
+  <clipPath id="letter-face"><use href="#mark" xlink:href="#mark"/></clipPath>
+  <linearGradient id="bevel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".38" stop-color="#e7f0e8"/><stop offset=".62" stop-color="#586d62"/><stop offset="1" stop-color="#10271b"/></linearGradient>
+  <pattern id="brush" width="19" height="3" patternUnits="userSpaceOnUse"><path d="M0 .4h13M5 1.9h14" stroke="#fff" stroke-opacity=".045" stroke-width=".35"/><path d="M2 1h8M11 2.6h8" stroke="#172c24" stroke-opacity=".06" stroke-width=".3"/></pattern>
+  <clipPath id="rim"><use href="#frame" xlink:href="#frame"/></clipPath>
+ </defs>
+ <use href="#frame" xlink:href="#frame" y="4" fill="#101b19" stroke="#0a1210" stroke-width="2"/>
+ <use href="#frame" xlink:href="#frame" fill="url(#metal)" stroke="#667a71" stroke-width="1.4"/>
+ <path d="M79 88C110 52 282 26 365 53M96 178C171 213 337 186 387 159" fill="none" stroke="#eef5eb" stroke-width="1.3" opacity=".75"/>
+ <use href="#frame" xlink:href="#frame" fill="url(#brush)"/>
+ <g clip-path="url(#rim)" fill="none" stroke="#fff"><path d="M110 61L141 31M116 65L149 31M354 195L382 162" stroke-width="3" opacity=".9"/><path d="M105 60L135 30M365 197L393 164" stroke-width=".8" opacity=".85"/></g>
+ <path d="M27 92H461L442 154H9Z" fill="#182923" stroke="#63776c"/>
+ <use href="#rails" xlink:href="#rails" y="3" fill="#17241f"/>
+ <use href="#rails" xlink:href="#rails" fill="url(#metal)" stroke="#a6b6aa" stroke-width=".7"/>
+ <use href="#mark" xlink:href="#mark" y="4" fill="#17241e" stroke="#101b17" stroke-width="1.6"/>
+ <use href="#mark" xlink:href="#mark" y="2.8" fill="#50665a"/>
+ <use href="#mark" xlink:href="#mark" y="1.4" fill="#9bab9e"/>
+ <use href="#mark" xlink:href="#mark" fill="url(#type)" stroke="#e0e9df" stroke-width="1.2" paint-order="stroke"/>
+ <use href="#mark" xlink:href="#mark" fill="url(#brush)"/>
+ <g clip-path="url(#letter-face)"><use href="#mark" xlink:href="#mark" fill="none" stroke="url(#bevel)" stroke-width="3"/></g>
+ <use href="#mark" xlink:href="#mark" fill="none" stroke="#fff" stroke-width=".45" opacity=".7" y="-.4"/>
+ <path d="M30 84H466M17 154H451" stroke="#f1f7ec" stroke-width="1" opacity=".9"/>
+</svg>

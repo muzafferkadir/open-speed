@@ -1,0 +1,274 @@
+[
+  {
+    "id": "bush",
+    "url": "/scenery/bush.glb",
+    "size": [
+      1.8032276510578817,
+      1,
+      2.0367875976872734
+    ],
+    "min": [
+      -0.9016138255289409,
+      0,
+      -1.0183937988436367
+    ],
+    "solid": false,
+    "transparent": false
+  },
+  {
+    "id": "cafe",
+    "url": "/scenery/cafe.glb",
+    "size": [
+      1.9616882321560374,
+      1,
+      1.8429138476603892
+    ],
+    "min": [
+      -0.9808441160780187,
+      0,
+      -0.9214569238301946
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "church",
+    "url": "/scenery/church.glb",
+    "size": [
+      1.705925174565026,
+      1,
+      0.5929668159178682
+    ],
+    "min": [
+      -0.852962587282513,
+      0,
+      -0.2964834079589341
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "cliff",
+    "url": "/scenery/cliff.glb",
+    "size": [
+      2.853129476120441,
+      1,
+      1.4498467441547416
+    ],
+    "min": [
+      -1.4265647380602204,
+      0,
+      -0.7249233720773708
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "container",
+    "url": "/scenery/container.glb",
+    "size": [
+      2,
+      1,
+      1.0000000000000002
+    ],
+    "min": [
+      -1,
+      0,
+      -0.5000000000000001
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "crane",
+    "url": "/scenery/crane.glb",
+    "size": [
+      1.1203051773883697,
+      1,
+      0.8760882295436275
+    ],
+    "min": [
+      -0.5601525886941848,
+      0,
+      -0.43804411477181376
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "fountain",
+    "url": "/scenery/fountain.glb",
+    "size": [
+      1.4341749567485602,
+      1,
+      1.4341749567485602
+    ],
+    "min": [
+      -0.7170874783742801,
+      0,
+      -0.7170874783742801
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "heritage",
+    "url": "/scenery/heritage.glb",
+    "size": [
+      0.4417413464084341,
+      1,
+      0.6918253615779072
+    ],
+    "min": [
+      -0.22087067320421705,
+      0,
+      -0.3459126807889536
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "hut",
+    "url": "/scenery/hut.glb",
+    "size": [
+      0.6627325724478215,
+      1,
+      1.8185703185703186
+    ],
+    "min": [
+      -0.33136628622391073,
+      0,
+      -0.9092851592851593
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "lighthouse",
+    "url": "/scenery/lighthouse.glb",
+    "size": [
+      0.4066954317398288,
+      1,
+      0.3372726586444585
+    ],
+    "min": [
+      -0.2033477158699144,
+      0,
+      -0.16863632932222924
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "monkey-head",
+    "url": "/scenery/monkey-head.glb",
+    "size": [
+      0.9824213663736979,
+      1,
+      0.9960936228434245
+    ],
+    "min": [
+      -0.49121068318684896,
+      0,
+      -0.49804681142171225
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "palm",
+    "url": "/scenery/palm.glb",
+    "size": [
+      0.7080191736336973,
+      1,
+      0.5650355395963641
+    ],
+    "min": [
+      -0.35400958681684863,
+      0,
+      -0.28251776979818205
+    ],
+    "solid": false,
+    "transparent": false
+  },
+  {
+    "id": "pine",
+    "url": "/scenery/pine.glb",
+    "size": [
+      0.4961165065628409,
+      1,
+      0.4739931835133278
+    ],
+    "min": [
+      -0.24805825328142045,
+      0,
+      -0.2369965917566639
+    ],
+    "solid": false,
+    "transparent": false
+  },
+  {
+    "id": "rock",
+    "url": "/scenery/rock.glb",
+    "size": [
+      2.351754623809019,
+      1,
+      2.353528788039444
+    ],
+    "min": [
+      -1.1758773119045094,
+      0,
+      -1.176764394019722
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "town",
+    "url": "/scenery/town.glb",
+    "size": [
+      0.7183556920012976,
+      1,
+      0.6811593022513849
+    ],
+    "min": [
+      -0.3591778460006488,
+      0,
+      -0.34057965112569244
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "townhouse",
+    "url": "/scenery/townhouse.glb",
+    "size": [
+      0.9101560115814209,
+      1,
+      0.9003909826278687
+    ],
+    "min": [
+      -0.45507800579071045,
+      0,
+      -0.4501954913139343
+    ],
+    "solid": true,
+    "transparent": false
+  },
+  {
+    "id": "umbrella",
+    "url": "/scenery/umbrella.glb",
+    "size": [
+      1.3093206615542181,
+      1,
+      1.29461592802805
+    ],
+    "min": [
+      -0.6546603307771091,
+      0,
+      -0.647307964014025
+    ],
+    "solid": true,
+    "transparent": false
+  }
+]

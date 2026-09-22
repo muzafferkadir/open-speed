@@ -1,0 +1,123 @@
+[
+  {
+    "id": "pine",
+    "uid": "6d8c9b82e66849fd9370c0b2dd4f2274",
+    "name": "PS1/Low Poly Pine Tree",
+    "author": "Jellypack",
+    "url": "https://sketchfab.com/3d-models/none-6d8c9b82e66849fd9370c0b2dd4f2274",
+    "license": "CC Attribution",
+    "faces": 446
+  },
+  {
+    "id": "palm",
+    "uid": "dc894acc16544bc69630e9a5232cf74c",
+    "name": "Realistic Palm Tree Low Poly",
+    "author": "Free Models.",
+    "url": "https://sketchfab.com/3d-models/none-dc894acc16544bc69630e9a5232cf74c",
+    "license": "CC Attribution",
+    "faces": 1284
+  },
+  {
+    "id": "cliff",
+    "uid": "936a4b56d71f4a0e972b805d3e09c624",
+    "name": "Generic Cliff 2_Mobile [RHE]",
+    "author": "tobyfredson",
+    "url": "https://sketchfab.com/3d-models/none-936a4b56d71f4a0e972b805d3e09c624",
+    "license": "CC Attribution",
+    "faces": 451
+  },
+  {
+    "id": "town",
+    "uid": "7003371cd8ba430c819ebd78eb0594cf",
+    "name": "Modular modernist eclectic building",
+    "author": "ChristosRami.studio",
+    "url": "https://sketchfab.com/3d-models/none-7003371cd8ba430c819ebd78eb0594cf",
+    "license": "CC Attribution",
+    "faces": 3612
+  },
+  {
+    "id": "container",
+    "uid": "2170960a2133433d96d4dd6617e94c70",
+    "name": "LoPoly PS1 Shipping Container",
+    "author": "BitHack",
+    "url": "https://sketchfab.com/3d-models/none-2170960a2133433d96d4dd6617e94c70",
+    "license": "CC Attribution",
+    "faces": 12
+  },
+  {
+    "id": "lighthouse",
+    "uid": "8cbfa6920c8e45a9a9abf37adb74dbf8",
+    "name": "Lighthouse, Low Poly",
+    "author": "FLAREMEDIA",
+    "url": "https://sketchfab.com/3d-models/none-8cbfa6920c8e45a9a9abf37adb74dbf8",
+    "license": "CC Attribution",
+    "faces": 1029
+  },
+  {
+    "id": "crane",
+    "uid": "bac9cbe7113c447b8705c6e894744ff3",
+    "name": "Skipskranen",
+    "author": "Tidvis",
+    "url": "https://sketchfab.com/3d-models/skipskranen-bac9cbe7113c447b8705c6e894744ff3",
+    "license": "CC Attribution"
+  },
+  {
+    "id": "heritage",
+    "uid": "e28e4f6ab3314f6a8cae005a192dd047",
+    "name": "Neo-gothic house remastered",
+    "author": "maria.jardan",
+    "url": "https://sketchfab.com/3d-models/neo-gothic-house-remastered-e28e4f6ab3314f6a8cae005a192dd047",
+    "license": "CC Attribution"
+  },
+  {
+    "id": "bush",
+    "taskId": "019f936d-57d1-759c-97bf-2ce51de39bd1",
+    "name": "Low-Poly Starleaf Bush",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "rock",
+    "taskId": "08e18880-542e-40ea-838b-b3def4de7bc3",
+    "name": "moss-rock-remesh",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "townhouse",
+    "taskId": "01a00fc5-1834-7fec-8699-d3dd3d4d6850",
+    "name": "Grand Baroque Townhouse",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "fountain",
+    "taskId": "01a01746-2018-7f25-aa30-197e5d480cb0",
+    "name": "Artisan Fountain",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "church",
+    "taskId": "190145e9-db51-491c-bcb7-a259e98fefc6",
+    "name": "wooden-village-church-30k",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "cafe",
+    "taskId": "01a01382-d9b4-76b3-bd40-384c543d2c0f",
+    "name": "Imperio Corner Cafe",
+    "source": "CC0",
+    "license": "cc0"
+  },
+  {
+    "id": "umbrella",
+    "uid": "bac8486298ab41ab884fccb867f1527b",
+    "name": "Parasol lowpoly - beach umbrella",
+    "author": "Harold.Llanos",
+    "url": "https://sketchfab.com/3d-models/parasol-lowpoly-beach-umbrella-bac8486298ab41ab884fccb867f1527b",
+    "license": "CC Attribution",
+    "faces": 872
+  }
+]

@@ -1,0 +1,14 @@
+# dependencies and local outputs
+node_modules/
+build/
+docs/
+
+*.log
+
+# macOS
+.DS_Store
+
+# local scratch kept out of the tree
+legacy/
+
+__pycache__/
